@@ -18,6 +18,7 @@ public class Dashboard {
    
     @GetMapping(value = "/details")
     ResponseEntity<String> getDetails() {
-        return ResponseEntity.ok("Success");
+        String successMessage = "Endpoint Success";
+        return ResponseEntity.ok(successMessage);
     }
 }
